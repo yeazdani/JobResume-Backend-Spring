@@ -85,6 +85,7 @@ public class AppService{
 		user.setPhone(userInfo.getPhone());
 		user.setCurrent_title(userInfo.getCurrent_title());
 		user.setLocation(userInfo.getLocation());
+		user.setPicRef(userInfo.getPicRef());
 
 		return usersRepository.save(user);
 	}
@@ -194,8 +195,8 @@ public class AppService{
 	public Optional<SingleJob> getJobById(String id) {
 		return singleJobRepository.findById(id);
 	}
-//	public List<SingleJob> getSingleJobsLimit(int from,int to) {
-//		return singleJobRepository.findByLimit(new PageRequest(from,to));
-//
-//	}
+	//	public List<SingleJob> getSingleJobsLimit(int from,int to) {
+	//		return singleJobRepository.findByLimit(new PageRequest(from,to));
+	//
+	//	}
 }

@@ -12,6 +12,7 @@ public class UserInfo {
 	private String current_title;
 	private String phone;
 	private String location;
+	private Boolean picRef;
 	
 	public String getUid() {
 		return uid;
@@ -55,5 +56,13 @@ public class UserInfo {
 	public void setLocation(String location) {
 		this.location = location;
 	}
+	public Boolean getPicRef() {
+		return picRef;
+	}
+	public void setPicRef(Boolean picRef) {
+		this.picRef = picRef;
+	}
+	
+	
 
 }
